@@ -24,9 +24,23 @@ A full-stack incident tracking application built with React, Spring Boot, and My
 
 ```text
 .
-├── incident-managing-system/   # React frontend
-└── incidentmanagement/         # Spring Boot backend
+|-- incident-managing-system/   # React frontend
+`-- incidentmanagement/         # Spring Boot backend
 ```
+
+## Output Screenshots
+
+### Dashboard
+
+![Dashboard output](docs/screenshots/dashboard.png)
+
+### Incident List
+
+![Incident list output](docs/screenshots/incident-list.png)
+
+### Create Incident
+
+![Create incident form output](docs/screenshots/incident-form.png)
 
 ## Getting Started
 
