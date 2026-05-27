@@ -115,6 +115,7 @@ Add these Render environment variables:
 SPRING_DATASOURCE_URL=jdbc:postgresql://<neon-host>/<database>?sslmode=require
 SPRING_DATASOURCE_USERNAME=<neon-user>
 SPRING_DATASOURCE_PASSWORD=<neon-password>
+HIBERNATE_DIALECT=org.hibernate.dialect.PostgreSQLDialect
 CORS_ALLOWED_ORIGINS=https://<your-vercel-app>.vercel.app
 ```
 
