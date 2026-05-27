@@ -1,6 +1,6 @@
 # Incident Management System Backend
 
-Spring Boot backend for the Incident Management System. It exposes REST endpoints for incident CRUD operations and stores records in MySQL through Spring Data JPA.
+Spring Boot backend for the Incident Management System. It exposes REST endpoints for incident CRUD operations and stores records through Spring Data JPA. Local Docker uses MySQL, while free hosted deployment can use Neon Postgres.
 
 ## Stack
 
@@ -10,18 +10,22 @@ Spring Boot backend for the Incident Management System. It exposes REST endpoint
 - Spring Data JPA
 - Hibernate
 - MySQL
+- PostgreSQL / Neon
 - Maven
 
 ## Run Locally
 
-Set your local MySQL credentials, then run:
+Without database environment variables, the app uses an in-memory H2 database for quick local runs.
+
+For MySQL or Neon, set database credentials before running:
 
 ```bash
-set DB_USERNAME=root
-set DB_PASSWORD=your_mysql_password
+set SPRING_DATASOURCE_URL=jdbc:postgresql://your-neon-host/your-db?sslmode=require
+set SPRING_DATASOURCE_USERNAME=your-neon-user
+set SPRING_DATASOURCE_PASSWORD=your-neon-password
 ```
 
-PowerShell users can set the same values with `$env:DB_USERNAME` and `$env:DB_PASSWORD`.
+PowerShell users can set the same values with `$env:SPRING_DATASOURCE_URL`, `$env:SPRING_DATASOURCE_USERNAME`, and `$env:SPRING_DATASOURCE_PASSWORD`.
 
 ```bash
 mvn spring-boot:run

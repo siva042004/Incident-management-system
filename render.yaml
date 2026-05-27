@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: incident-management-api
+    runtime: docker
+    plan: free
+    rootDir: incidentmanagement
+    healthCheckPath: /api/health
+    envVars:
+      - key: SERVER_PORT
+        value: 8080
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: JPA_DDL_AUTO
+        value: update
+      - key: JPA_SHOW_SQL
+        value: false
+      - key: CORS_ALLOWED_ORIGINS
+        sync: false
