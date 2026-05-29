@@ -1,0 +1,17 @@
+package com.ims.incidentmanagement.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class WelcomeController {
+    @GetMapping("/")
+    public String welcome() {
+        return "Incident Management System Backend is running on port 8080.";
+    }
+
+    @GetMapping("/api/health")
+    public String health() {
+        return "Backend is healthy.";
+    }
+}
