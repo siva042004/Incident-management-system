@@ -1,6 +1,17 @@
+<<<<<<< HEAD
 target
 .git
 .github
 .vscode
 node_modules
 *.log
+=======
+node_modules
+build
+.git
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+>>>>>>> d99e0b7800d94305b74ef0c8cdc494a4bdfdacbd
