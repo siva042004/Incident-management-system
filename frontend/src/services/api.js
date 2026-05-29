@@ -11,4 +11,11 @@ const api = axios.create({
   },
 });
 
+export const incidentAPI = {
+  getAll: () => api.get("/incidents"),
+  create: (data) => api.post("/incidents", data),
+  update: (id, data) => api.put(`/incidents/${id}`, data),
+  delete: (id) => api.delete(`/incidents/${id}`),
+};
+
 export default api;
