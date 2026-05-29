@@ -1,44 +1,167 @@
-# Incident Management System Backend
+# 🚨 Incident Management System
 
-Spring Boot backend for the Incident Management System. It exposes REST endpoints for incident CRUD operations and stores records through Spring Data JPA. Local Docker uses MySQL, while free hosted deployment can use Neon Postgres.
+A modern **full-stack Incident Management System** built to streamline incident reporting, tracking, and resolution with real-time visibility and role-based workflows.
 
-## Stack
+## 🔗 Live Demo
 
-- Java 17
-- Spring Boot
-- Spring Web
-- Spring Data JPA
-- Hibernate
-- MySQL
-- PostgreSQL / Neon
-- Maven
+**Frontend:** [Add Frontend URL Here]
+**Backend API:** https://incident-management-system-q6qd.onrender.com
 
-## Run Locally
+## 📌 Project Overview
 
-Without database environment variables, the app uses an in-memory H2 database for quick local runs.
+The Incident Management System enables users to create, monitor, and manage incidents efficiently through a clean and responsive dashboard.
 
-For MySQL or Neon, set database credentials before running:
+This project demonstrates **full-stack development**, **REST API integration**, **frontend-backend communication**, and **deployment skills** using modern technologies.
 
-```bash
-set SPRING_DATASOURCE_URL=jdbc:postgresql://your-neon-host/your-db?sslmode=require
-set SPRING_DATASOURCE_USERNAME=your-neon-user
-set SPRING_DATASOURCE_PASSWORD=your-neon-password
+## ✨ Key Features
+
+### 👤 User Features
+
+* Create new incidents
+* View incident history
+* Search and filter incidents
+* Edit incident details
+* Delete incidents
+* Track incident status and priority
+
+### 📊 Dashboard Features
+
+* Total incident analytics
+* Open / In Progress / Resolved statistics
+* Recent incidents overview
+* Responsive and user-friendly UI
+
+### ⚙️ Backend Features
+
+* RESTful APIs
+* CRUD operations
+* MySQL database integration
+* Spring Boot architecture
+* Environment-based configuration
+* CORS support for frontend integration
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* React.js
+* Material UI (MUI)
+* React Router
+* Axios
+
+### Backend
+
+* Java
+* Spring Boot
+* Spring Data JPA
+* REST APIs
+* Maven
+
+### Database
+
+* MySQL
+
+### Deployment
+
+* Render (Backend)
+* GitHub
+
+---
+
+## 🏗 System Architecture
+
+Frontend (React)
+⬇ REST API Calls
+Backend (Spring Boot)
+⬇
+MySQL Database
+
+---
+
+## 📷 Screenshots
+
+Add screenshots here for:
+
+* Dashboard
+* Incident List
+* Create Incident Form
+
+Example:
+
+```md
+![Dashboard](screenshots/dashboard.png)
 ```
 
-PowerShell users can set the same values with `$env:SPRING_DATASOURCE_URL`, `$env:SPRING_DATASOURCE_USERNAME`, and `$env:SPRING_DATASOURCE_PASSWORD`.
+---
+
+## 🚀 Installation & Setup
+
+### Clone Repository
 
 ```bash
+git clone https://github.com/siva042004/Incident-management-system.git
+cd Incident-management-system
+```
+
+### Backend Setup
+
+```bash
+cd backend
 mvn spring-boot:run
 ```
 
-The API starts at `http://localhost:8080`.
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+### Environment Variable
+
+Create `.env` inside frontend:
+
+```env
+REACT_APP_API_BASE_URL=http://localhost:8080/api
+```
+
+---
 
 ## API Endpoints
 
-| Method | Endpoint | Purpose |
-| --- | --- | --- |
-| GET | `/api/incidents` | List all incidents |
-| GET | `/api/incidents/{id}` | Get one incident |
-| POST | `/api/incidents` | Create an incident |
-| PUT | `/api/incidents/{id}` | Update an incident |
-| DELETE | `/api/incidents/{id}` | Delete an incident |
+| Method | Endpoint            | Description        |
+| ------ | ------------------- | ------------------ |
+| GET    | /api/incidents      | Get all incidents  |
+| GET    | /api/incidents/{id} | Get incident by ID |
+| POST   | /api/incidents      | Create incident    |
+| PUT    | /api/incidents/{id} | Update incident    |
+| DELETE | /api/incidents/{id} | Delete incident    |
+
+---
+
+## 💡 What I Learned
+
+This project helped me strengthen my understanding of:
+
+* Full-stack application development
+* REST API design and integration
+* State management in React
+* Database operations using JPA
+* Deployment and production configuration
+* Debugging and build optimization
+
+---
+
+## 👨‍💻 Author
+
+**Siva Ragul**
+Computer Science Graduate | Java Full Stack Developer
+
+GitHub: https://github.com/siva042004
+
+---
+
+⭐ If you found this project interesting, consider giving it a star!
