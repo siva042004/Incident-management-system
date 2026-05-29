@@ -1,3 +1,4 @@
+com\ims\incidentmanagement\config\WebConfig.class
 com\ims\incidentmanagement\service\IncidentService.class
 com\ims\incidentmanagement\controller\IncidentController.class
 com\ims\incidentmanagement\IncidentManagementApplication.class

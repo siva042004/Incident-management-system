@@ -1,8 +1,8 @@
-D:\project\incidentmanagement\src\main\java\com\ims\incidentmanagement\config\WebConfig.java
-D:\project\incidentmanagement\src\main\java\com\ims\incidentmanagement\service\IncidentService.java
-D:\project\incidentmanagement\src\main\java\com\ims\incidentmanagement\DbInspector.java
-D:\project\incidentmanagement\src\main\java\com\ims\incidentmanagement\IncidentManagementApplication.java
-D:\project\incidentmanagement\src\main\java\com\ims\incidentmanagement\controller\IncidentController.java
-D:\project\incidentmanagement\src\main\java\com\ims\incidentmanagement\model\Incident.java
-D:\project\incidentmanagement\src\main\java\com\ims\incidentmanagement\repository\IncidentRepository.java
-D:\project\incidentmanagement\src\main\java\com\ims\incidentmanagement\controller\WelcomeController.java
+D:\incident\backend\src\main\java\com\ims\incidentmanagement\controller\IncidentController.java
+D:\incident\backend\src\main\java\com\ims\incidentmanagement\model\Incident.java
+D:\incident\backend\src\main\java\com\ims\incidentmanagement\repository\IncidentRepository.java
+D:\incident\backend\src\main\java\com\ims\incidentmanagement\DbInspector.java
+D:\incident\backend\src\main\java\com\ims\incidentmanagement\IncidentManagementApplication.java
+D:\incident\backend\src\main\java\com\ims\incidentmanagement\service\IncidentService.java
+D:\incident\backend\src\main\java\com\ims\incidentmanagement\controller\WelcomeController.java
+D:\incident\backend\src\main\java\com\ims\incidentmanagement\config\WebConfig.java
