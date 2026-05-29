@@ -1,0 +1,7 @@
+com\ims\incidentmanagement\service\IncidentService.class
+com\ims\incidentmanagement\controller\IncidentController.class
+com\ims\incidentmanagement\IncidentManagementApplication.class
+com\ims\incidentmanagement\model\Incident.class
+com\ims\incidentmanagement\repository\IncidentRepository.class
+com\ims\incidentmanagement\controller\WelcomeController.class
+com\ims\incidentmanagement\DbInspector.class
